@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+    padding-bottom: 7rem; /* 70px */
+    font-family: 'Arima', cursive;
+}
+
+/* HEADER */
+.header {
+    background: #4EA487;
+    height: 12rem; /* 120px */
+    display: flex;
+    align-items: center;
+}
+
+.header-inner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 14.6rem; /* 146px */
+}
+
+/* LOGO */
+.logo img {
+    height: 5.6rem; /* 55px mobile base */
+    display: block;
+}
+
+/* NAV (Desktop erstmal hidden) */
+.desktop-nav {
+    display: none;
+    gap: 6rem;
+    margin-left: 8rem; 
+}
+
+/* MOBILE NAV */
+.mobile-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 8.8rem;
+
+    background-color: #F1C953;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    z-index: 999;
+}
+
+.mobile-nav a {
+    color: #4EA487;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+.mobile-nav img {
+    height: 4rem;
+    width: 4rem;
+}
+
+
+@media (min-width: 768px) {
+
+    body {
+        padding-bottom: 0;
+    }
+
+    .header {
+        height: 12rem;
+    }
+
+    .header-inner {
+        max-width: 144rem; /* 1440px */
+        max-height: 12.8rem;
+        margin: 0 auto;
+
+        padding: 0 14.6rem;
+    }
+
+    /* LOGO responsive */
+    .logo img {
+        height: clamp(5.5rem, 4vw, 7.2rem);
+        width: auto;
+    }
+
+    /* NAV */
+    .desktop-nav {
+        display: flex;
+        gap: 6rem;
+    }
+
+    .desktop-nav a {
+        color: #F8F5EB;
+        text-decoration: none;
+
+        font-size: clamp(2rem, 1.5vw, 2.4rem);
+        font-weight: 700;
+        line-height: 1;
+        position: relative;
+    }
+
+    .desktop-nav a:hover {
+        opacity: 0.8;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+}
