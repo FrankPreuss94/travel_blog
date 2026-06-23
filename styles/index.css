@@ -25,4 +25,142 @@
         left: 10%;
     }
 
+    /* <---FAQ---> */
+.faq-section {
+    max-width: 100rem; 
+    margin: 3rem auto;
+    padding: 0 1.6rem; 
+    font-family: 'Arima', cursive; 
+}
+
+.faq-title {
+    color: #4EA487; 
+    text-align: center;
+    margin-bottom: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.faq-section img {
+    width: 2.8rem;  
+    height: 3.2rem;
+}
+
+.faq-section h2 {
+    font-size: 3.2rem; 
+    font-family: 'Arima', cursive;
+    font-weight: 700;
+}
+
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; 
+}
+
+
+.faq-box {
+    background-color: #F1C953; 
+    border-radius: 1rem; 
+    overflow: hidden;
+    transition: all 0.3s ease;
+    padding: 0 1.2rem 1.2rem 1.2rem; 
+}
+
+
+.faq-box summary {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 1.6rem 0.2rem; 
+    font-family: 'Palanquin', sans-serif;
+    font-size: 1.6rem; 
+    font-weight: 700;
+    color: #54370D; 
+    cursor: pointer;
+    user-select: none;
+}
+
+.faq-box summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-box summary::after {
+    content: "";
+    display: inline-block;
+    width: 1.8rem;  
+    height: 1rem; 
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 12' fill='none' stroke='%234A3B00' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'><path d='M2 2l10 8L22 2'/></svg>");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.3s ease; 
+}
+
+.faq-box[open] summary::after {
+    transform: rotate(180deg); 
+}
+
+
+.faq-answer {
+    background-color: #FFFFFF; 
+    border-radius: 0.6rem; 
+    padding: 1.5rem; 
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #54370D;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.05); 
+}
+
+
+@media (min-width: 768px) {
+    .faq-section {
+        max-width: 144rem; 
+        margin: 4rem auto;
+        
+        padding: 0 12rem; 
+    }
+
+    .faq-title {
+        margin-bottom: 3rem;
+    }
+
+    .faq-section img {
+        width: 3.6rem;
+        height: 4.1rem;
+    }
+
+    .faq-section h2 {
+        font-size: 5.2rem;
+    }
+
+    .faq-container {
+        gap: 2rem;
+    }
+
+    .faq-box {
+        padding: 0 1.5rem 1.5rem 1.5rem; 
+    }
+
+    
+    .faq-box summary {
+        padding: 2rem 0.5rem; 
+        font-size: clamp(1.8rem, 1.8vw, 2.4rem);
+    }
+
+    .faq-box summary::after {
+        width: 2rem;  
+        height: 1.2rem; 
+    }
+
+    .faq-answer {
+        padding: 2rem; 
+        font-size: 1.6rem;
+    }
+}
+
 }
