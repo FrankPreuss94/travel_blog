@@ -1,6 +1,4 @@
-/* ==========================
-   RESET
-========================== */
+
 
 * {
     margin: 0;
@@ -18,9 +16,7 @@ body {
     font-family: 'Palanquin', sans-serif;
 }
 
-/* ==========================
-   MAIN CONTAINER
-========================== */
+
 
 .article {
     max-width: 120rem;
@@ -28,9 +24,7 @@ body {
     padding: 4rem 5rem;
 }
 
-/* ==========================
-   HERO SECTION
-========================== */
+
 
 .article-hero {
     display: flex;
@@ -79,10 +73,36 @@ body {
     color: #666;
     font-size: 1.4rem;
 }
+.meta span {
+    margin-right: 2.5rem; 
+}
 
-/* ==========================
-   AUTHOR BOX
-========================== */
+.meta {
+    display: flex;
+    align-items: center;    
+    gap: 0.5rem;            
+    flex-wrap: wrap;        
+}
+
+.meta img[src*="calendar"] {
+    width: 1.6rem;
+    height: 1.8rem;
+}
+
+.meta img[src*="eyeglasses"] {
+    width: 2rem;
+    height: 0.7rem;
+}
+
+.meta img[src*="eye_icon"] {
+    width: 2rem;
+    height: 1.4rem;
+}
+
+.meta img[src*="share"] {
+    width: 1.6rem;
+    height: 1.8rem;
+}
 
 .author-box {
     width: 25rem;
@@ -125,9 +145,7 @@ body {
     line-height: 1.5;
 }
 
-/* ==========================
-   CONTENT
-========================== */
+
 
 .content {
     margin-bottom: 5rem;
