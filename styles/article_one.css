@@ -8,6 +8,42 @@ main {
     font-size: 1.6rem;
 }
 
+.author_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1.6rem;
+
+    background-color: rgba(78, 164, 135, 0.2);
+
+    border-radius: 3rem;
+
+    img {
+        width: 12rem;
+        height: 12rem;
+        border-radius: 50%;
+        object-fit: cover;
+
+        object-position: 75% center;
+    }
+
+    h5 {
+        font-size: clamp(1.6rem, 1.25dvw, 1.8rem);
+    }
+
+    h6 {
+        font-size: clamp(1.6rem, 1.25dvw, 1.8rem);
+        font-weight: 400;
+    }
+
+    p {
+        font-size: 1.6rem;
+    }
+}
+
+
 .slider {
     display: flex;
     justify-content: center;
