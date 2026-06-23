@@ -4,7 +4,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
+}
 
     #curve {
         width: 50%;
@@ -95,6 +95,7 @@
     width: 1.8rem;  
     height: 1rem; 
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 12' fill='none' stroke='%234A3B00' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'><path d='M2 2l10 8L22 2'/></svg>");
+    /* background-color: #F1C953; */
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -163,4 +164,3 @@
     }
 }
 
-}
