@@ -115,7 +115,6 @@ body {
         flex-wrap: wrap;          
         justify-content: flex-start; 
         
-        
         color: #54370D;  
         font-size: 1.5rem;            
     }
@@ -130,6 +129,12 @@ body {
 
     .content p {
         font-size: 1.6rem;
+    }
+}
+
+@media (min-width: 510px) and (max-width: 767px){
+    .meta span {
+        margin-right: clamp(2.5rem, 1.2vw, 4rem);
     }
 }
 
