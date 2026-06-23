@@ -1,66 +1,81 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Travel Blog</title>
 
-        <link
-            rel="icon"
-            type="image/png"
-            href="./assets/icons/travel_blog_logo.png"
-        />
-        <link rel="stylesheet" href="/styles/header.css" />
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Blog</title>
 
-        <link
-            href="https://fonts.googleapis.com/css2?family=Arima:wght@300;400;500;600;700&display=swap"
-            rel="stylesheet"
-        />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap"
-            rel="stylesheet"
-        />
-    </head>
+    <link rel="icon" type="image/png" href="./assets/icons/travel_blog_logo.png" />
 
-    <body>
-        <header class="header">
-            <div class="header-inner">
-                <a href="index.html" class="logo">
-                    <img
-                        src="./assets/icons/travel_blog_logo.png"
-                        alt="Travel Blog Logo"
-                    />
-                </a>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/article_two.css">
 
-                <nav class="desktop-nav">
-                    <a href="index.html">Highlights</a>
-                    <a href="article1.html">Article 1</a>
-                    <a href="article2.html">Article 2</a>
-                    <a href="article3.html">Article 3</a>
-                </nav>
-            </div>
-        </header>
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+</head>
 
-        <nav class="mobile-nav">
-            <a href="index.html">
-                <img src="./assets/icons/home.png" alt="Home" />
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <img src="./assets/icons/travel_blog_logo.png" alt="Travel Blog Logo" />
             </a>
 
-            <a href="article1.html">
-                <img src="./assets/icons/rocket_launch.png" alt="Article 1" />
-            </a>
+            <nav class="desktop-nav">
+                <a href="index.html">Highlights</a>
+                <a href="article1.html">Article 1</a>
+                <a href="article2.html">Article 2</a>
+                <a href="article3.html">Article 3</a>
+            </nav>
+        </div>
+    </header>
 
-            <a href="article2.html">
-                <img src="./assets/icons/live_help.png" alt="Article 2" />
-            </a>
+    <!-- ich habe den div=pro_tipps innerhalb meiner section=articel (article_one) eingesetzt
+        falls du das als eigene section haben möchtest, bitte entsprechend im Html und Css anpassen-->
+    <div class="pro_tipps">
+        <div class="tipps_badge">
+            <img src="./assets/icons/pro_tipps_icon.png" alt="pro tipps icon">
+            <h5>Pro tipps</h5>
+        </div>
 
-            <a href="article3.html">
-                <img src="./assets/icons/person_pin.png" alt="Article 3" />
-            </a>
-        </nav>
+        <div class="tipps_list">
+            <ol>
+                <li>Ante in commodo porta scelerisque turpis gravida semper.
+                    <a href="https://www.google.com/" target="_blank">Useful link.</a> Egestas a enim
+                    vestibulum malesuada. Eta scelerisque turpis gravida semper.
+                </li>
+                <li>Lorem ipsum dolor sit ameta enim vestibulum malesuada. Ante intrew commodo porta scelerisque
+                    turpis. ipsum dolor sit amet consectetur. Egestas a enim vestibulum malesuada. Ante in
+                    commodo porta scelerisque turpis gravida semper. </li>
+            </ol>
+        </div>
+    </div>
 
-        <main>
-            <!-- Seiteninhalt -->
-        </main>
-    </body>
+    <nav class="mobile-nav">
+        <a href="index.html">
+            <img src="./assets/icons/home.png" alt="Home" />
+        </a>
+
+        <a href="article1.html">
+            <img src="./assets/icons/rocket_launch.png" alt="Article 1" />
+        </a>
+
+        <a href="article2.html">
+            <img src="./assets/icons/live_help.png" alt="Article 2" />
+        </a>
+
+        <a href="article3.html">
+            <img src="./assets/icons/person_pin.png" alt="Article 3" />
+        </a>
+    </nav>
+
+    <main>
+        <!-- Seiteninhalt -->
+    </main>
+</body>
+
 </html>

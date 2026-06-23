@@ -1,0 +1,53 @@
+html {
+    font-size: 62.5%;
+    /* 1rem = 10px */
+}
+
+main {
+    padding: 0 1.5rem;
+    font-size: 1.6rem;
+}
+
+.pro_tipps {
+
+    max-width: 144rem;
+
+    .tipps_badge {
+        width: 20rem;
+        height: 6.5rem;
+        border-radius: 1rem;
+
+        transform: rotate(-12deg);
+
+        background-color: rgba(78, 164, 135, 1);
+        color: rgba(241, 201, 83, 1);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 4.5rem;
+        }
+
+        h5 {
+            font-size: 2.8rem;
+            font-weight: bold;
+        }
+    }
+
+    .tipps_list {
+        background-color: rgba(78, 164, 135, 0.2);
+        border-radius: 3rem;
+        padding: 3.5rem;
+
+        font-size: clamp(1.6rem, 1.67dvw, 2.4rem);
+
+        li {
+            a {
+                color: rgba(78, 164, 135, 1);
+                text-decoration: none;
+            }
+        }
+    }
+}
