@@ -1,0 +1,243 @@
+/* ==========================
+   RESET
+========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #F8F5EB;
+    color: #444;
+    font-family: 'Palanquin', sans-serif;
+}
+
+/* ==========================
+   MAIN CONTAINER
+========================== */
+
+.article {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 4rem 5rem;
+}
+
+/* ==========================
+   HERO SECTION
+========================== */
+
+.article-hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 4rem;
+
+    margin-bottom: 5rem;
+}
+
+.article-text {
+    flex: 1;
+}
+
+.category {
+    font-size: 2rem;
+    color: #4EA487;
+    margin-bottom: 1rem;
+}
+
+.article-text h1 {
+    font-family: 'Arima', cursive;
+
+    color: #F1C953;
+
+    font-size: clamp(3.2rem, 4vw, 5.2rem);
+    line-height: 1.1;
+
+    margin-bottom: 2rem;
+}
+
+.intro {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    max-width: 70rem;
+
+    margin-bottom: 2rem;
+}
+
+.meta {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+
+    color: #666;
+    font-size: 1.4rem;
+}
+
+/* ==========================
+   AUTHOR BOX
+========================== */
+
+.author-box {
+    width: 25rem;
+
+    background-color: #DDECE5;
+
+    border-radius: 1.2rem;
+
+    padding: 2rem;
+
+    text-align: center;
+
+    flex-shrink: 0;
+}
+
+.author-box img {
+    width: 10rem;
+    height: 10rem;
+
+    border-radius: 50%;
+    object-fit: cover;
+
+    margin-bottom: 1rem;
+}
+
+.author-box h3 {
+    color: #4EA487;
+    font-size: 1.8rem;
+}
+
+.role {
+    font-size: 1.4rem;
+    color: #666;
+
+    margin-bottom: 1rem;
+}
+
+.bio {
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+/* ==========================
+   CONTENT
+========================== */
+
+.content {
+    margin-bottom: 5rem;
+}
+
+.content p {
+    font-size: 1.8rem;
+    line-height: 1.7;
+}
+
+/* ==========================
+   GRAPH SECTION
+========================== */
+
+.graph {
+    text-align: center;
+
+    margin: 6rem 0;
+}
+
+.graph h2 {
+    font-family: 'Arima', cursive;
+
+    color: #6A4A2B;
+
+    font-size: 3rem;
+
+    margin-bottom: 3rem;
+}
+
+.graph img {
+    width: 100%;
+    max-width: 60rem;
+
+    display: block;
+    margin: 0 auto;
+}
+
+/* ==========================
+   CARDS SECTION
+========================== */
+
+.cards {
+    display: flex;
+    gap: 4rem;
+
+    margin: 6rem 0;
+}
+
+.card {
+    flex: 1;
+}
+
+.card h3 {
+    text-align: center;
+
+    font-family: 'Arima', cursive;
+
+    color: #6A4A2B;
+
+    font-size: 2.6rem;
+
+    margin-bottom: 2rem;
+}
+
+.card img {
+    width: 100%;
+    max-width: 45rem;
+
+    display: block;
+    margin: 0 auto 2rem;
+}
+
+.card p {
+    font-size: 1.7rem;
+    line-height: 1.6;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media (max-width: 768px) {
+
+    .article {
+        padding: 3rem 2rem;
+    }
+
+    .article-hero {
+        flex-direction: column;
+    }
+
+    .author-box {
+        width: 100%;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .meta {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .intro {
+        font-size: 1.8rem;
+    }
+
+    .content p {
+        font-size: 1.6rem;
+    }
+}
