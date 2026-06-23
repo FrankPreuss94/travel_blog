@@ -111,7 +111,7 @@ main {
         align-items: center;
         flex-direction: column;
 
-        gap: 3.2rem;
+        font-size: clamp(1.6rem, 1.67dvw, 2.4rem);
 
         max-width: 144rem;
         margin-bottom: 4rem;
@@ -124,10 +124,12 @@ main {
 
             padding-top: 4rem;
 
-            gap: 2rem;
+            gap: clamp(1.6rem, 4.44dvw, 6.4rem);
+
+            margin-bottom: clamp(3.2rem, 6.1dvw, 8.8rem);
 
             h4 {
-                font-size: 2rem;
+                font-size: clamp(2rem, 2.22dvw, 3.2rem);
             }
 
             .slider {
@@ -188,7 +190,14 @@ main {
             }
         }
 
+        .introduction p {
+            margin-bottom: clamp(3.2rem, 6.1dvw, 8.8rem);
+        }
+
         .list {
+            margin-bottom: clamp(3.2rem, 6.1dvw, 8.8rem);
+            ;
+
             p {
                 padding-bottom: 2rem;
             }
@@ -203,6 +212,8 @@ main {
     .pro_tipps {
 
         max-width: 144rem;
+
+        margin-bottom: clamp(3.2rem, 6.1dvw, 8.8rem);
 
         .tipps_badge {
             width: 20rem;
