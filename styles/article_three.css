@@ -160,28 +160,35 @@ body {
    GRAPH SECTION
 ========================== */
 
+
 .graph {
     text-align: center;
-
+    
     margin: 6rem 0;
+    /* background-color: #ffffff;
+    padding: 40px;               
+    border-radius: 40px;   
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.08),  
+    0px 5px 15px rgba(0, 0, 0, 0.04);   
+
+    display: inline-block; */
 }
 
 .graph h2 {
     font-family: 'Arima', cursive;
-
+    font-weight: 600;
     color: #6A4A2B;
-
-    font-size: 3rem;
-
+    font-size: 3.2rem;
     margin-bottom: 3rem;
 }
 
 .graph img {
-    width: 100%;
-    max-width: 60rem;
+    width: 64rem;
+    height: 43.6rem;
 
     display: block;
     margin: 0 auto;
+
 }
 
 /* ==========================
