@@ -11,7 +11,7 @@ html {
 
 body {
     background-color: #F8F5EB;
-    color: #444;
+    color: #54370D;
     font-family: 'Palanquin', sans-serif;
 }
 
@@ -36,6 +36,9 @@ body {
 
 .category {
     font-size: clamp(1.6rem, 1.2vw + 1.2rem, 2rem);
+    font-family: 'Palanquin', sans-serif;
+    font-weight: 600;
+    font-size: 4rem;
     color: #4EA487;
     margin-bottom: 1rem;
 }
@@ -182,9 +185,10 @@ body {
 }
 
 
+
 @media (max-width: 768px) {
     .article {
-        padding: 3rem 2rem;
+        padding: 1.5rem 1.5rem;
     }
 
     .article-hero {
@@ -206,5 +210,11 @@ body {
         flex-grow: 1;        
         min-width: 13rem;    
         white-space: nowrap; 
+    }
+}
+
+@media (min-width: 510px) and (max-width: 767px){
+    .meta span {
+        margin-right: clamp(2.5rem, 1.2vw, 4rem);
     }
 }
