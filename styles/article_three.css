@@ -146,7 +146,7 @@ body {
 }
 
 .graph p{
-    font-size: clamp(1.6rem, 2.5vw, 3.2rem);
+    font-size: clamp(1.6rem, 1vw + 1.2rem, 2.4rem);
     font-weight: 400;
     font-family: 'Palanquin', sans-serif;
     margin-top: 8rem;
@@ -167,7 +167,7 @@ body {
     text-align: center;
     font-family: 'Arima', cursive;
     color: #6A4A2B;
-    font-size: clamp(2rem, 2vw + 1rem, 3.2em);
+    font-size: clamp(2rem, 2.5vw + 1rem, 3.2rem);
     margin-bottom: 2rem;
 }
 
