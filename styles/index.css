@@ -27,10 +27,6 @@
 
     /* Highlights section */
 
-.highlights{
-    
-}
-
 .highlights > p{
     display: flex;
     justify-content: center;
