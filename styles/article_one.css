@@ -3,11 +3,6 @@ html {
     /* 1rem = 10px */
 }
 
-main {
-    padding: 0 1.5rem;
-    font-size: 1.6rem;
-}
-
 /* ==========================================================================
    HERO AREA & AUTHOR BOX STYLES
    ========================================================================== */
@@ -49,24 +44,24 @@ main {
 }
 
 body {
-    background-color: #F8F5EB;
-    color: #54370D;
-    font-family: 'Palanquin', sans-serif;
+    /* background-color: #F8F5EB; */
+    /* color: #54370D; */
+    font-family: 'Palanquin';
 }
 
 /* Meta Leiste mit Flexbox-Ausrichtung */
 .meta {
     display: flex;
-    align-items: center;    
-    gap: 0.5rem;            
-    flex-wrap: wrap;        
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
     color: #54370D;
     font-size: 1.6rem;
 }
 
 
-    .meta span {      
-    margin-right: clamp(1rem, 2vw + 0.5rem, 2.5rem); 
+.meta span {
+    margin-right: clamp(1rem, 2vw + 0.5rem, 2.5rem);
 }
 
 
@@ -96,7 +91,7 @@ body {
 }
 
 .content p {
-    font-family: 'Palanquin', sans-serif;
+    font-family: 'Palanquin';
     font-weight: 400;
     font-size: 2.4rem;
     line-height: 120%;
@@ -123,13 +118,13 @@ body {
     }
 
     .meta {
-        display: flex;           
-        flex-direction: row;      
-        flex-wrap: wrap;          
-        justify-content: flex-start; 
-        
-        color: #54370D;  
-        font-size: 1.5rem;            
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+        color: #54370D;
+        font-size: 1.5rem;
     }
 
     .meta span {
@@ -139,60 +134,165 @@ body {
     .intro {
         font-size: 1.8rem;
     }
-
-    .content p {
-        font-size: 1.6rem;
-    }
 }
 
-@media (min-width: 510px) and (max-width: 767px){
-    .meta span {
-        margin-right: clamp(2.5rem, 1.2vw, 4rem);
-    }
-}
 
-.slider {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+main {
+    /* padding an mobile-nav und footer anpassen */
+    padding-bottom: 8.8rem;
+    padding-inline: clamp(15px, 9.39vw - 15.21px, 120px);
 
-    padding-top: 4rem;
+    font-size: 1.6rem;
 
-    gap: 2rem;
-
-    h4 {
-        font-size: 2rem;
-    }
-
-    img {
-        width: 25rem;
-    }
-
-    margin-bottom: 4rem;
-}
-
-.article {
     display: flex;
     align-items: center;
     flex-direction: column;
 
     gap: 3.2rem;
 
-    .list {
-        p {
-            padding-bottom: 2rem;
+
+    .content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        font-size: clamp(1.6rem, 1.67dvw, 2.4rem);
+
+        max-width: 144rem;
+        margin-bottom: 4rem;
+
+        .beach_destinations {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            padding-top: 4rem;
+
+            gap: clamp(1.6rem, 4.44dvw, 6.4rem);
+
+            margin-bottom: clamp(3.2rem, 6.1dvw, 8.8rem);
+
+            h4 {
+                font-size: clamp(2rem, 2.22dvw, 3.2rem);
+
+                @media (max-width: 345px) {
+                    font-size: 1.9rem;
+                }
+            }
+
+
+            .slider {
+                position: relative;
+
+                width: clamp(30rem, 90dvw, 70rem);
+                height: 44rem;
+
+                border-radius: 1.6rem;
+
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+
+                overflow: hidden;
+
+
+                input[type="radio"] {
+                    appearance: none;
+
+                    width: 2.2rem;
+                    height: 2.2rem;
+
+
+                    border-radius: 50%;
+
+                    margin: 0 0.5rem 2rem 0.5rem;
+
+                    background-color: rgba(255, 255, 255, 0.726);
+
+                    transition: all 0.5s ease-in-out;
+                }
+
+                input {
+                    z-index: 2;
+                }
+
+                input[type="radio"]:checked {
+                    width: 4rem;
+
+                    border-radius: 999px;
+
+                    background-color: rgba(241, 201, 83, 1);
+                }
+
+                input[value="one"]:checked~.slider_wrapper {
+                    transform: translateX(40%);
+                }
+
+                input[value="two"]:checked~.slider_wrapper {
+                    transform: translateX(20%);
+                }
+
+                input[value="three"]:checked~.slider_wrapper {
+                    transform: translateX(0);
+                }
+
+                input[value="four"]:checked~.slider_wrapper {
+                    transform: translateX(-20%);
+                }
+
+                input[value="five"]:checked~.slider_wrapper {
+                    transform: translateX(-40%);
+                }
+
+                .slider_wrapper {
+
+                    width: 500%;
+                    height: 100%;
+
+
+
+                    position: absolute;
+                    display: flex;
+
+                    transition: all 0.5s ease-in-out;
+
+                    .slider_image {
+                        width: 20%;
+                        height: 100%;
+
+                        border-radius: 1.6rem;
+
+                        object-fit: cover;
+                    }
+                }
+            }
         }
 
-        li {
-            list-style-position: inside;
-            padding-inline-start: 2rem;
+        .introduction p {
+            margin-bottom: clamp(3.2rem, 6.1dvw, 8.8rem);
+        }
+
+        .list {
+            margin-bottom: clamp(3.2rem, 6.1dvw, 8.8rem);
+            ;
+
+            p {
+                padding-bottom: 2rem;
+            }
+
+            li {
+                list-style-position: inside;
+                padding-inline-start: 2rem;
+            }
         }
     }
 
     .pro_tipps {
 
         max-width: 144rem;
+
+        margin-bottom: clamp(3.2rem, 6.1dvw, 8.8rem);
 
         .tipps_badge {
             width: 20rem;
