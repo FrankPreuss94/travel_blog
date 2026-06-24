@@ -97,7 +97,7 @@ html {
 main {
     /* padding an mobile-nav und footer anpassen */
     padding-bottom: 8.8rem;
-    padding-inline: clamp(20px, 9.39vw - 15.21px, 120px);
+    padding-inline: clamp(15px, 9.39vw - 15.21px, 120px);
 
     font-size: 1.6rem;
 
@@ -153,27 +153,25 @@ main {
 
                 overflow: hidden;
 
-                input {
-                    z-index: 2;
-                }
 
                 input[type="radio"] {
                     appearance: none;
 
-                    width: 2rem;
-                    height: 2rem;
+                    width: 2.2rem;
+                    height: 2.2rem;
+
 
                     border-radius: 50%;
 
                     margin: 0 0.5rem 2rem 0.5rem;
 
-                    background-color: rgba(78, 164, 135, 1);
+                    background-color: rgba(255, 255, 255, 0.726);
 
-                    transition: all 1s ease;
+                    transition: all 0.5s ease-in-out;
+                }
 
-                    position: relative;
-
-                    bottom: 1.5rem;
+                input {
+                    z-index: 2;
                 }
 
                 input[type="radio"]:checked {
@@ -181,10 +179,8 @@ main {
 
                     border-radius: 999px;
 
-                    background-color: #4EA487;
+                    background-color: rgba(241, 201, 83, 1);
                 }
-
-
 
                 input[value="one"]:checked~.slider_wrapper {
                     transform: translateX(40%);
@@ -207,18 +203,22 @@ main {
                 }
 
                 .slider_wrapper {
+
                     width: 500%;
                     height: 100%;
+
 
 
                     position: absolute;
                     display: flex;
 
-                    transition: all 1s ease-in-out;
+                    transition: all 0.5s ease-in-out;
 
                     .slider_image {
                         width: 20%;
                         height: 100%;
+
+                        border-radius: 1.6rem;
 
                         object-fit: cover;
                     }
