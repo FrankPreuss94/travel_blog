@@ -8,6 +8,149 @@ main {
     font-size: 1.6rem;
 }
 
+/* ==========================================================================
+   HERO AREA & AUTHOR BOX STYLES
+   ========================================================================== */
+
+.article-hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 4rem;
+    margin-bottom: 5rem;
+}
+
+.article-text {
+    flex: 1;
+}
+
+.category {
+    font-family: 'Palanquin', sans-serif;
+    font-weight: 600;
+    font-size: 4rem;
+    color: #4EA487;
+    margin-bottom: 1rem;
+}
+
+.article-text h1 {
+    font-family: 'Arima', cursive;
+    color: #F1C953;
+    font-size: clamp(3.2rem, 5vw, 6.4rem);
+    line-height: 1.1;
+    margin-bottom: 2rem;
+}
+
+.intro {
+    font-size: 2.8rem;
+    font-weight: 400;
+    line-height: 1.5;
+    max-width: 70rem;
+    margin-bottom: 2rem;
+}
+
+body {
+    background-color: #F8F5EB;
+    color: #54370D;
+    font-family: 'Palanquin', sans-serif;
+}
+
+/* Meta Leiste mit Flexbox-Ausrichtung */
+.meta {
+    display: flex;
+    align-items: center;    
+    gap: 0.5rem;            
+    flex-wrap: wrap;        
+    color: #54370D;
+    font-size: 1.6rem;
+}
+
+    .meta span {
+    margin-right: clamp(1rem, 2vw + 0.5rem, 2.5rem); 
+}
+
+/* Icon-Größen-Steuerung */
+.meta img[src*="calendar"] {
+    width: 1.6rem;
+    height: 1.8rem;
+}
+
+.meta img[src*="eyeglasses"] {
+    width: 2rem;
+    height: 0.7rem;
+}
+
+.meta img[src*="eye_icon"] {
+    width: 2rem;
+    height: 1.4rem;
+}
+
+.meta img[src*="share"] {
+    width: 1.6rem;
+    height: 1.8rem;
+}
+
+.content {
+    margin-bottom: 5rem;
+}
+
+.content p {
+    font-family: 'Palanquin', sans-serif;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 120%;
+}
+
+
+/* Responsive Anpassungen für Mobilgeräte */
+@media (max-width: 768px) {
+
+    .article {
+        padding: 1.5rem 1.5rem;
+    }
+
+    .article-hero {
+        flex-direction: column;
+    }
+
+    .author-box {
+        width: 100%;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .meta {
+        display: flex;           
+        flex-direction: row;      
+        flex-wrap: wrap;          
+        justify-content: flex-start; 
+        
+        
+        color: #54370D;  
+        font-size: 1.5rem;            
+    }
+
+    .meta span {
+            margin-right: clamp(0rem, 0.7vw, 4rem);
+}
+    
+
+    .intro {
+        font-size: 1.8rem;
+    }
+
+    .content p {
+        font-size: 1.6rem;
+    }
+}
+
+@media (min-width: 510px) and (max-width: 767px){
+    .meta span {
+        margin-right: clamp(2.5rem, 1.2vw, 4rem);
+    }
+}
+
 .pro_tipps {
 
     max-width: 144rem;
