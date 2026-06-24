@@ -96,7 +96,9 @@ html {
 
 main {
     /* padding an mobile-nav und footer anpassen */
-    padding: 0 1.5rem 8.8rem 1.5rem;
+    padding-bottom: 8.8rem;
+    padding-inline: clamp(20px, 9.39vw - 15.21px, 120px);
+
     font-size: 1.6rem;
 
     display: flex;
@@ -130,7 +132,12 @@ main {
 
             h4 {
                 font-size: clamp(2rem, 2.22dvw, 3.2rem);
+
+                @media (max-width: 345px) {
+                    font-size: 1.9rem;
+                }
             }
+
 
             .slider {
                 position: relative;
@@ -149,6 +156,35 @@ main {
                 input {
                     z-index: 2;
                 }
+
+                input[type="radio"] {
+                    appearance: none;
+
+                    width: 2rem;
+                    height: 2rem;
+
+                    border-radius: 50%;
+
+                    margin: 0 0.5rem 2rem 0.5rem;
+
+                    background-color: rgba(78, 164, 135, 1);
+
+                    transition: all 1s ease;
+
+                    position: relative;
+
+                    bottom: 1.5rem;
+                }
+
+                input[type="radio"]:checked {
+                    width: 4rem;
+
+                    border-radius: 999px;
+
+                    background-color: #4EA487;
+                }
+
+
 
                 input[value="one"]:checked~.slider_wrapper {
                     transform: translateX(40%);
