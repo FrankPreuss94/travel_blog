@@ -1,50 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Impressum - Travel Blog</title>
+        <link rel="stylesheet" href="./styles/header-footer.css" />
+        <link rel="stylesheet" href="./styles/main.css" />
+        <style>
+            .impressum-content {
+                background-color: #f8f5eb;
+                color: #54370d;
+                font-family: "Palanquin", sans-serif;
+                padding: 4rem 2rem;
+                max-width: 80rem;
+                margin: 0 auto;
+                font-size: 1.6rem;
+                line-height: 1.6;
+            }
+            .impressum-content h1 {
+                color: #4ea487;
+                font-family: "Palanquin", sans-serif;
+                font-size: 3.6rem;
+            }
+            .back-link {
+                display: inline-block;
+                margin-top: 3rem;
+                color: #4ea487;
+                text-decoration: none;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="impressum-content">
+            <h1>Impressum</h1>
+            <h2>Angaben gemäß § 5 TMG</h2>
+            <p>
+                Max Mustermann<br />
+                Travel Blog Projektgruppe<br />
+                Musterstraße 123<br />
+                12345 Musterstadt
+            </p>
+            <h2>Kontakt</h2>
+            <p>
+                Telefon: +49 (0) 123 456789<br />E-Mail:
+                info@travelblog-projekt.de
+            </p>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/header-footer.css">
-    <link rel="stylesheet" href="./styles/main.css">
-    <title>Document</title>
-</head>
+            <a href="javascript:history.back()" class="back-link"
+                >&larr; Zurück zum Artikel</a
+            >
+        </div>
 
-<body>
-
-
-
-
-
-
-
-
-
-
-     <!-- footer -->
         <footer class="footer">
             <div class="footer-left">
-                <p>Imprint</p>
+                <a href="impressum.html" class="footer-link">Imprint</a>
                 <p>Cookie Preferences</p>
                 <div class="copyright">
-                    <img src="./assets/icons/copyright_icon.png" alt="">
+                    <img src="./assets/icons/copyright_icon.png" alt="" />
                     <p>Travel Blog 2026</p>
                 </div>
             </div>
-            <div class="footer-right">
-                <a href="https://www.tiktok.com" target="_blank">
-                    <img src="./assets/icons/tiktok_icon.png" alt="tiktok icon" class="footer-icons">
-                </a>
-                <a href="https://www.youtube.com" target="_blank">
-                    <img src="./assets/icons/youtube_icon.png" alt="youtube icon" class="footer-icons">
-                </a>
-                <a href="https://www.facebook.com" target="_blank">
-                    <img src="./assets/icons/facebook_icon.png" alt="facebook icon" class="footer-icons">
-                </a>
-                <a href="https://www.instagram.com" target="_blank">
-                    <img src="./assets/icons/Instagram_icon.png" alt="instagram icon" class="footer-icons">
-                </a>
-            </div>
+            <div class="footer-right"></div>
         </footer>
-</body>
-
+    </body>
 </html>
