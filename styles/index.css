@@ -37,17 +37,28 @@
     height: clamp(3.2rem, 2.5vw + 1.5rem, 4rem);  
 }
 
-.slider-section p {
-    
+
+.slider-header {
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    text-align: center; 
+}
+
+
+.slider-header p {
     max-width: 120rem;
     width: 100%;
     
-    text-align: center;
+    margin: 0 auto 5rem; 
     
+    text-align: center;
     font-family: 'Palanquin', sans-serif;
     font-weight: 500;
     font-size: clamp(2rem, 2.5vw + 1.5rem, 2.4rem);
-
+    
+    
+    padding: 0 2.5rem;
     box-sizing: border-box;
 }
 
@@ -212,11 +223,8 @@ input[name="slider-state"] {
 }
 
 @media (max-width: 768px) {
-    .slider-header p:first-of-type {
-        display: none;
-    }
- 
-    .slider-header p:first-of-type {
+    
+    .slider-header p {
         display: none;
     }
     
@@ -225,8 +233,6 @@ input[name="slider-state"] {
 }
 
     .slider-card {
-        width: clamp(30.7rem, 1.5vw, 88rem);
-        height: clamp()19rem, 1.5vw, 22.9rem;
         border-top-right-radius: 5.3rem;
         left: 50%;
         transform: translateX(-50%) scale(0.85);
