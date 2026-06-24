@@ -129,7 +129,7 @@ body {
     font-family: 'Arima', cursive;
     font-weight: 600;
     color: #6A4A2B;
-    font-size: clamp(2.4rem, 2.5vw + 1.5rem, 3.2rem);
+    font-size: clamp(2rem, 2.5vw , 3.2rem);
     margin-bottom: 3rem;
 }
 
