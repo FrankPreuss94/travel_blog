@@ -44,9 +44,9 @@ html {
 }
 
 body {
-    background-color: #F8F5EB;
-    color: #54370D;
-    font-family: 'Palanquin', sans-serif;
+    /* background-color: #F8F5EB; */
+    /* color: #54370D; */
+    font-family: 'Palanquin';
 }
 
 /* Meta Leiste mit Flexbox-Ausrichtung */
@@ -91,7 +91,7 @@ body {
 }
 
 .content p {
-    font-family: 'Palanquin', sans-serif;
+    font-family: 'Palanquin';
     font-weight: 400;
     font-size: 2.4rem;
     line-height: 120%;
