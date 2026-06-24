@@ -34,10 +34,9 @@ body {
 }
 
 .category {
-    font-size: clamp(1.6rem, 1.2vw + 1.2rem, 2rem);
+    font-size: clamp(2rem, 1.2vw , 4rem);
     font-family: 'Palanquin', sans-serif;
     font-weight: 600;
-    font-size: 4rem;
     color: #4EA487;
     margin-bottom: 1rem;
 }
@@ -45,7 +44,7 @@ body {
 .article-text h1 {
     font-family: 'Arima', cursive;
     color: #F1C953;
-    font-size: clamp(3.2rem, 4vw + 1rem, 5.2rem);
+    font-size: clamp(4rem, 4vw + 1rem, 6.4rem);
     line-height: 1.1;
     margin-bottom: 2rem;
 }
@@ -147,7 +146,7 @@ body {
 }
 
 .graph p{
-    font-size: 2.4rem;
+    font-size: clamp(1.6rem, 2.5vw, 3.2rem);
     font-weight: 400;
     font-family: 'Palanquin', sans-serif;
     margin-top: 8rem;
@@ -175,7 +174,7 @@ body {
 .card img {
     width: 100%;
     max-width: 64rem;
-    height: auto; /* RETTET DIE BILDER VOR DEM QUETSCHEN */
+    height: auto; 
     display: block;
     margin: 0 auto 2rem;
 
@@ -216,8 +215,18 @@ body {
     }
 }
 
-/* @media (min-width: 510px) and (max-width: 767px){
-    .meta span {
-        margin-right: clamp(2.5rem, 1.2vw, 4rem);
+@media (min-width: 1440px) {
+    .article,
+    .header-content { 
+        max-width: 144rem; 
+        margin: 0 auto; 
+        
+        padding: 6rem 8rem; 
     }
-} */
+
+    
+    .graph img, 
+    .card img {
+        max-width: 80rem; 
+    }
+}
