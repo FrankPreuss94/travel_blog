@@ -1,28 +1,42 @@
 .hero {
     height: 100dvh;
-    background-image: url(./assets/img/cappadocia_hero_circle_icon.png);
+    background-image: url(../assets/img/cappadocia_home_hero.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-#curve {
-    width: 50%;
-    height: 50%;
 
 
-    position: relative;
-    top: 0;
-    left: 0;
-}
+    #hero_background {
+        height: 100dvh;
+        width: 100dvh;
+    }
 
-#badge {
-    z-index: 3;
-    width: 160px;
+    .curve {
+        height: 50%;
+        width: 50%;
+        background-color: rgba(241, 201, 83, 1);
 
-    position: absolute;
-    top: 30%;
-    left: 10%;
+        border-bottom-right-radius: 70%;
+    }
+
+    /* #curve {
+        width: 50%;
+        height: 50%;
+
+
+        position: relative;
+        top: 0;
+        left: 0;
+    } */
+
+    #badge {
+        z-index: 3;
+        width: 160px;
+
+        position: absolute;
+        top: 50%;
+        left: 20%;
+    }
 }
 
 /* <---FAQ---> */
