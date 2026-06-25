@@ -20,7 +20,7 @@ html {
 }
 
 .category {
-    font-size: 4rem;
+    font-size: clamp(2rem, 1.2vw, 4rem);
     font-family: 'Palanquin', sans-serif;
     font-weight: 600;
     color: #4EA487;
@@ -36,11 +36,11 @@ html {
 }
 
 .intro {
-    font-size: 2.8rem;
+    font-size: clamp(1.6rem, 1.5vw + 1rem, 2rem);
     font-weight: 400;
     line-height: 1.5;
     max-width: 70rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 body {
@@ -53,19 +53,18 @@ body {
 .meta {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
     flex-wrap: wrap;
-    color: #54370D;
-    font-size: 1.6rem;
+    color: #666;
+    font-size: clamp(1.2rem, 0.8vw + 1rem, 1.4rem);
+    gap: 1rem 2rem;
 }
 
-
-.meta span {
-    margin-right: clamp(1rem, 2vw + 0.5rem, 2.5rem);
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
 }
 
-
-/* Icon-Größen-Steuerung */
 .meta img[src*="calendar"] {
     width: 1.6rem;
     height: 1.8rem;
@@ -84,6 +83,44 @@ body {
 .meta img[src*="share"] {
     width: 1.6rem;
     height: 1.8rem;
+}
+
+.author-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 25rem;
+    background-color: #DDECE5;
+    border-radius: 3rem;
+    padding: 2rem;
+    flex-shrink: 0;
+}
+
+.author-box img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    object-position: 75% center;
+}
+
+.author-box h3 {
+    color: #4EA487;
+    font-size: 1.8rem;
+}
+
+.role {
+    font-size: 1.4rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.bio {
+    font-size: 1.3rem;
+    line-height: 1.5;
 }
 
 .content {
@@ -107,6 +144,7 @@ body {
 
     .article-hero {
         flex-direction: column;
+        gap: 3rem;
     }
 
     .author-box {
