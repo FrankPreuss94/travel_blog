@@ -1,4 +1,3 @@
-
 .hero {
     height: 100dvh;
     background-image: url(../assets/img/cappadocia_hero_circle_icon.png); 
@@ -23,20 +22,16 @@
     left: 10%;
 }
 
-
 .slider-section {
+
     text-align: center;
-    margin: 6rem 0;
-    width: 100%;
+    margin: 2rem auto;
 }
 
-
-.slider-section img{
-    margin-right: 1rem;
-    width: (3.2rem, 2.5vw + 1.5rem, 4rem);
+    .slider-section img{
+    width: clamp(3.35rem, 2.5vw + 1.5rem, 4rem);
     height: clamp(3.2rem, 2.5vw + 1.5rem, 4rem);  
-}
-
+} 
 
 .slider-header {
     width: 100%;
@@ -44,7 +39,6 @@
     margin: 0 auto;
     text-align: center; 
 }
-
 
 .slider-header p {
     max-width: 120rem;
@@ -57,11 +51,9 @@
     font-weight: 500;
     font-size: clamp(2rem, 2.5vw + 1.5rem, 2.4rem);
     
-    
     padding: 0 2.5rem;
     box-sizing: border-box;
 }
-
 
 .slider-title {
     font-family: 'Arima', cursive;
@@ -73,12 +65,9 @@
 .slider-container {
     position: relative;
 
-    width: calc(
-        100% - (clamp(2rem, 8.5vw, 12rem) * 2)
-    );
-
-    max-width: 120rem;
-    height: 47.1rem;
+    width: calc(100% - 3.2rem);
+    aspect-ratio: 343 / 553;
+    height: auto;
 
     margin: 0 auto 2rem;
 
@@ -91,22 +80,18 @@ input[name="slider-state"] {
     display: none;
 }
 
-
 .slider-card {
     position: absolute;
     top: 0;
     
-  
     left: 50%;
     transform: translateX(-50%) scale(0.9); 
-    width: 100%; 
-    
+    width: 100%;
     height: 100%;
-    
+
     box-shadow: -0.2rem 0.4rem 1.16rem rgba(0, 0, 0, 0.25);
     overflow: hidden;
     
-   
     transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.5s ease;
     opacity: 0;
     z-index: 1;
@@ -115,7 +100,8 @@ input[name="slider-state"] {
 .slider-card img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    
+    display: block;
 }
 
 
@@ -177,20 +163,17 @@ input[name="slider-state"] {
     color: rgba(255, 255, 255, 0.9);
 }
 
-
 .slider-card:not(:checked) .slider-text-box {
     opacity: 0;
 }
 
-
 #slide-1:checked ~ .card-1 .slider-text-box,
-#slide-2:checked ~ .card-2 .slider-text-box,
+/* #slide-2:checked ~ .card-2 .slider-text-box, */
 #slide-3:checked ~ .card-3 .slider-text-box,
 #slide-4:checked ~ .card-4 .slider-text-box,
 #slide-5:checked ~ .card-5 .slider-text-box {
     opacity: 1;
 }
-
 
 .slider-pagination {
     position: absolute;
@@ -212,9 +195,8 @@ input[name="slider-state"] {
     transition: width 0.3s cubic-bezier(0.25, 1, 0.5, 1), background-color 0.3s ease;
 }
 
-
 #slide-1:checked ~ .slider-pagination .dot-1,
-#slide-2:checked ~ .slider-pagination .dot-2,
+/* #slide-2:checked ~ .slider-pagination .dot-2, */
 #slide-3:checked ~ .slider-pagination .dot-3,
 #slide-4:checked ~ .slider-pagination .dot-4,
 #slide-5:checked ~ .slider-pagination .dot-5 {
@@ -229,14 +211,13 @@ input[name="slider-state"] {
     }
     
     .slider-container {
-    height: 40rem;
+    height: auto;
 }
 
     .slider-card {
         border-top-right-radius: 5.3rem;
         left: 50%;
         transform: translateX(-50%) scale(0.85);
-        width: 100%; 
     }
 
     .slider-text-box {
@@ -275,7 +256,6 @@ input[name="slider-state"] {
         width: 4rem; 
     }
 
-    
     .card-1,
 .card-2,
 .card-3,
@@ -294,10 +274,22 @@ input[name="slider-state"] {
 }
 }
 
+@media (min-width: 769px) {
+    .slider-container {
+        width: min(120rem, calc(100% - 24rem));
+        height: 55.3rem;
+        aspect-ratio: auto;
+    }
+
+    .slider-card {
+        width: 100%;
+        height: 100%;
+    }
+}
 
 .faq-section {
     max-width: 100rem;
-    margin: 3rem auto;
+    margin: 2rem auto;
     padding: 0 1.6rem;
     font-family: 'Arima', cursive;
 }
