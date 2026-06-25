@@ -146,9 +146,6 @@ body {
     line-height: 1.7;
 }
 
-/* ==========================================
-   RAIN PERIODS SECTION (.graph)
-   ========================================== */
 .graph {
     display: flex;
     flex-direction: column;
@@ -173,11 +170,9 @@ body {
 .graph img {
     width: 100%;
     max-width: 64rem;
-    height: auto;
-    /* Erlaubt dem Bild, sich beim Zusammenschieben proportional zu verkleinern */
-    aspect-ratio: 640 / 471;
-    /* Behält das originale Seitenverhältnis deiner Vorlage bei */
-    object-fit: contain;
+    height: auto; 
+    aspect-ratio: 640 / 471; 
+    object-fit: contain; 
     display: block;
     background-color: #ffffff;
     margin: 0 auto;
@@ -191,14 +186,11 @@ body {
     font-family: 'Palanquin', sans-serif;
     line-height: 1.7;
     width: 100%;
-    align-self: stretch;
-    /* Zwingt den Text auf die vollen 1200px Breite */
+    align-self: stretch; 
     text-align: left;
 }
 
-/* ==========================================
-   CARDS SECTION (.cards & .card)
-   ========================================== */
+
 .cards {
     display: flex;
     gap: 4rem;
@@ -209,8 +201,7 @@ body {
 .card {
     flex: 1;
     display: flex;
-    flex-direction: column;
-    /* Flexbox untereinander ist hier stabiler als Grid */
+    flex-direction: column; 
     justify-content: space-between;
     gap: 2rem;
     width: 100%;
@@ -229,17 +220,14 @@ body {
     font-family: 'Palanquin', sans-serif;
     text-align: left;
     line-height: 1.6;
-    flex-grow: 1;
-    /* Drückt das Bild nach unten, falls ein Text kürzer ist */
+    flex-grow: 1; 
 }
 
 .card img {
     width: 100%;
     max-width: 100%;
-    height: auto;
-    /* Verhindert das Stauchen auf dem Smartphone! */
-    aspect-ratio: 540 / 471;
-    /* Hält das Bild perfekt im Kasten */
+    height: auto; 
+    aspect-ratio: 540 / 471; 
     object-fit: contain;
     display: block;
     background-color: #ffffff;
@@ -248,9 +236,7 @@ body {
     box-shadow: -0.2rem 0.4rem 1.16rem rgba(0, 0, 0, 0.25);
 }
 
-/* ==========================================
-   RESPONSIVE MEDIA QUERIES
-   ========================================== */
+
 @media (max-width: 768px) {
     .article {
         padding: 1.5rem 1.5rem;
@@ -265,13 +251,13 @@ body {
         width: 100%;
     }
 
-    /* Die Karten brechen mobil sauber untereinander um */
+    
     .cards {
         flex-direction: column;
         gap: 5rem;
     }
 
-    /* Das Bild der großen Grafik skaliert jetzt sauber runter */
+    
     .graph img {
         max-width: 100%;
     }
