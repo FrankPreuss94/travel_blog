@@ -200,10 +200,9 @@
     }
 
     .slider-container {
-        /* Holt sich auf Desktop die weite, flache Struktur zurück */
+        
         width: min(120rem, calc(100% - 24rem));
         
-        /* Überschreibt die mobile Clamp-Höhe mit der fließenden Desktop-Höhe */
         height: clamp(45rem, 45vw, 55.3rem);
         max-height: 55.3rem; 
     }
