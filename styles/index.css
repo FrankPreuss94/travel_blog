@@ -23,12 +23,11 @@
 }
 
 .slider-section {
-
     text-align: center;
     margin: 2rem auto;
 }
 
-    .slider-section img{
+.slider-section img {
     width: clamp(3.35rem, 2.5vw + 1.5rem, 4rem);
     height: clamp(3.2rem, 2.5vw + 1.5rem, 4rem);  
 } 
@@ -43,14 +42,11 @@
 .slider-header p {
     max-width: 120rem;
     width: 100%;
-    
     margin: 0 auto 5rem; 
-    
     text-align: center;
     font-family: 'Palanquin', sans-serif;
     font-weight: 500;
     font-size: clamp(2rem, 2.5vw + 1.5rem, 2.4rem);
-    
     padding: 0 2.5rem;
     box-sizing: border-box;
 }
@@ -62,36 +58,29 @@
     margin-bottom: 2rem;
 }
 
+
 .slider-container {
     position: relative;
-
-    width: calc(100% - 3.2rem);
-    aspect-ratio: 343 / 553;
-    height: auto;
-
     margin: 0 auto 2rem;
-
     overflow: hidden;
     border-top-right-radius: 5.3rem;
-}
 
+    width: clamp(33.5rem, 60vw, 45rem);
 
-input[name="slider-state"] {
-    display: none;
+    
+    height: clamp(55.3rem, 75vw, 60rem);
 }
 
 .slider-card {
     position: absolute;
     top: 0;
-    
     left: 50%;
-    transform: translateX(-50%) scale(0.9); 
+    transform: translateX(-50%) scale(0.85); 
     width: 100%;
     height: 100%;
-
     box-shadow: -0.2rem 0.4rem 1.16rem rgba(0, 0, 0, 0.25);
     overflow: hidden;
-    
+    border-top-right-radius: 5.3rem;
     transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.5s ease;
     opacity: 0;
     z-index: 1;
@@ -104,44 +93,46 @@ input[name="slider-state"] {
 }
 
 
-#slide-1:checked ~ .card-1 { opacity: 1; transform: translateX(-50%) scale(1); z-index: 10; }
-#slide-1:checked ~ .card-2 { opacity: 0.7; transform: translateX(calc(-50% + 3rem)) scale(0.93); z-index: 5; }
+#slide-1:checked ~ .card-1,
+#slide-2:checked ~ .card-2,
+#slide-3:checked ~ .card-3,
+#slide-4:checked ~ .card-4,
+#slide-5:checked ~ .card-5 {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+    z-index: 10;
+}
 
+#slide-1:checked ~ .card-2,
+#slide-2:checked ~ .card-3,
+#slide-3:checked ~ .card-4,
+#slide-4:checked ~ .card-5 { 
+    opacity: 0.7; 
+    transform: translateX(calc(-50% + 3rem)) scale(0.93); 
+    z-index: 5; 
+}
 
-#slide-2:checked ~ .card-1 { opacity: 0; transform: translateX(calc(-50% - 3rem)) scale(0.93); z-index: 1; }
-#slide-2:checked ~ .card-2 { opacity: 1; transform: translateX(-50%) scale(1); z-index: 10; }
-#slide-2:checked ~ .card-3 { opacity: 0.7; transform: translateX(calc(-50% + 3rem)) scale(0.93); z-index: 5; }
-
-
-#slide-3:checked ~ .card-2 { opacity: 0; transform: translateX(calc(-50% - 3rem)) scale(0.93); z-index: 1; }
-#slide-3:checked ~ .card-3 { opacity: 1; transform: translateX(-50%) scale(1); z-index: 10; }
-#slide-3:checked ~ .card-4 { opacity: 0.7; transform: translateX(calc(-50% + 3rem)) scale(0.93); z-index: 5; }
-
-
-#slide-4:checked ~ .card-3 { opacity: 0; transform: translateX(calc(-50% - 3rem)) scale(0.93); z-index: 1; }
-#slide-4:checked ~ .card-4 { opacity: 1; transform: translateX(-50%) scale(1); z-index: 10; }
-#slide-4:checked ~ .card-5 { opacity: 0.7; transform: translateX(calc(-50% + 3rem)) scale(0.93); z-index: 5; }
-
-
-#slide-5:checked ~ .card-4 { opacity: 0; transform: translateX(calc(-50% - 3rem)) scale(0.93); z-index: 1; }
-#slide-5:checked ~ .card-5 { opacity: 1; transform: translateX(-50%) scale(1); z-index: 10; }
-
+#slide-2:checked ~ .card-1,
+#slide-3:checked ~ .card-2,
+#slide-4:checked ~ .card-3,
+#slide-5:checked ~ .card-4 { 
+    opacity: 0; 
+    transform: translateX(calc(-50% - 3rem)) scale(0.93); 
+    z-index: 1; 
+}
 
 .slider-text-box {
     position: absolute;
-    top: 4rem;
-    left: 4rem;
-    max-width: 70rem;
-    padding: 3.5rem;
-    border-radius: 1.5rem;
+    top: 2rem;
+    left: 2rem;
+    right: 2rem;
+    padding: 2rem;
     color: #ffffff;
     text-align: left;
-    
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-top-right-radius: 5.3rem;
-    
     transition: opacity 0.4s ease;
 }
 
@@ -150,7 +141,7 @@ input[name="slider-state"] {
     font-size: clamp(2.8rem, 2.5vw + 1.5rem, 4.8rem);
     font-weight: 600;
     line-height: 1.2;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.8rem;
     color: #ffffff;
 }
 
@@ -158,7 +149,7 @@ input[name="slider-state"] {
     font-family: 'Palanquin', sans-serif;
     font-size: clamp(2rem, 1.5vw + 1.5rem, 2.8rem);
     font-weight: 400;
-    line-height: 1.5;
+    line-height: 1.4;
     color: rgba(255, 255, 255, 0.9);
 }
 
@@ -167,7 +158,6 @@ input[name="slider-state"] {
 }
 
 #slide-1:checked ~ .card-1 .slider-text-box,
-/* #slide-2:checked ~ .card-2 .slider-text-box, */
 #slide-3:checked ~ .card-3 .slider-text-box,
 #slide-4:checked ~ .card-4 .slider-text-box,
 #slide-5:checked ~ .card-5 .slider-text-box {
@@ -176,18 +166,18 @@ input[name="slider-state"] {
 
 .slider-pagination {
     position: absolute;
-    bottom: 3.5rem;
+    bottom: 2rem;
     left: 50%;
     transform: translateX(-50%);
     z-index: 20;
     display: flex;
-    gap: 1.2rem;
+    gap: 0.8rem;
     align-items: center;
 }
 
 .pagination-dot {
-    width: 3.2rem;
-    height: 3.2rem;
+    width: 2rem;
+    height: 2rem;
     border-radius: 5rem;
     background-color: rgba(255, 255, 255, 0.8);
     cursor: pointer;
@@ -195,56 +185,61 @@ input[name="slider-state"] {
 }
 
 #slide-1:checked ~ .slider-pagination .dot-1,
-/* #slide-2:checked ~ .slider-pagination .dot-2, */
+#slide-2:checked ~ .slider-pagination .dot-2,
 #slide-3:checked ~ .slider-pagination .dot-3,
 #slide-4:checked ~ .slider-pagination .dot-4,
 #slide-5:checked ~ .slider-pagination .dot-5 {
-    width: 6.4rem;             
+    width: 4rem;             
     background-color: #E6B653; 
 }
 
-@media (max-width: 768px) {
-    
+
+@media (min-width: 768px) {
     .slider-header p {
-        display: none;
+        display: block;
     }
-    
+
     .slider-container {
-    height: auto;
-}
+        /* Holt sich auf Desktop die weite, flache Struktur zurück */
+        width: min(120rem, calc(100% - 24rem));
+        
+        /* Überschreibt die mobile Clamp-Höhe mit der fließenden Desktop-Höhe */
+        height: clamp(45rem, 45vw, 55.3rem);
+        max-height: 55.3rem; 
+    }
 
     .slider-card {
-        border-top-right-radius: 5.3rem;
-        left: 50%;
-        transform: translateX(-50%) scale(0.85);
+        transform: translateX(-50%) scale(0.9);
+    }
+
+    #slide-1:checked ~ .card-1,
+    #slide-2:checked ~ .card-2,
+    #slide-3:checked ~ .card-3,
+    #slide-4:checked ~ .card-4,
+    #slide-5:checked ~ .card-5 {
+        transform: translateX(-50%) scale(1);
     }
 
     .slider-text-box {
-        top: 2rem;
-        left: 2rem;
-        right: 2rem; 
-        max-width: none;
-        padding: 2rem;
+        top: 4rem;
+        left: 4rem;
+        right: auto;
+        max-width: 70rem;
+        padding: 3.5rem;
     }
 
     .slider-text-box h3 {
-        /* font-size: 2rem; */
-        margin-bottom: 0.8rem;
-    }
-
-    .slider-text-box p {
-        /* font-size: 1.4rem; */
-        line-height: 1.4;
+        margin-bottom: 1.5rem;
     }
 
     .slider-pagination {
-        bottom: 2rem;
-        gap: 0.8rem;
+        bottom: 3.5rem;
+        gap: 1.2rem;
     }
 
     .pagination-dot {
-        width: 2rem;
-        height: 2rem;
+        width: 3.2rem;
+        height: 3.2rem;
     }
 
     #slide-1:checked ~ .slider-pagination .dot-1,
@@ -252,37 +247,7 @@ input[name="slider-state"] {
     #slide-3:checked ~ .slider-pagination .dot-3,
     #slide-4:checked ~ .slider-pagination .dot-4,
     #slide-5:checked ~ .slider-pagination .dot-5 {
-        width: 4rem; 
-    }
-
-    .card-1,
-.card-2,
-.card-3,
-.card-4,
-.card-5 {
-    opacity: 0;
-}
-
-#slide-1:checked ~ .card-1,
-#slide-2:checked ~ .card-2,
-#slide-3:checked ~ .card-3,
-#slide-4:checked ~ .card-4,
-#slide-5:checked ~ .card-5 {
-    opacity: 1;
-    transform: translateX(-50%) scale(1);
-}
-}
-
-@media (min-width: 769px) {
-    .slider-container {
-        width: min(120rem, calc(100% - 24rem));
-        height: 55.3rem;
-        aspect-ratio: auto;
-    }
-
-    .slider-card {
-        width: 100%;
-        height: 100%;
+        width: 6.4rem;             
     }
 }
 
@@ -371,7 +336,6 @@ input[name="slider-state"] {
     color: #54370D;
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
 }
-
 
 @media (min-width: 768px) {
     .faq-section {
