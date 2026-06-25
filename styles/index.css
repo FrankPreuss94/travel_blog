@@ -1,32 +1,51 @@
 .hero {
-    height: 100dvh;
+    height: 55rem;
     background-image: url(../assets/img/cappadocia_home_hero.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
-
-    #hero_background {
-        height: 100dvh;
-        width: 100dvh;
-    }
+    max-width: 144rem;
+    margin: 0 auto;
 
     .curve {
-        height: 50%;
-        width: 50%;
+        height: clamp(33rem, 47dvw, 57rem);
+        width: clamp(200px, 50dvw, 500px);
         background-color: rgba(241, 201, 83, 1);
-
         border-bottom-right-radius: 70%;
-    }
 
-    /* #curve {
-        width: 50%;
-        height: 50%;
-
+        flex-shrink: inherit;
 
         position: relative;
-        top: 0;
-        left: 0;
+
+        .hero_text {
+            height: 23rem;
+            width: clamp(19rem, 25dvw, 33rem);
+
+            position: absolute;
+            top: 6rem;
+            left: 7rem;
+
+            h3 {
+                font-size: clamp(5.5rem, 5dvw, 6rem);
+                color: rgba(84, 55, 13, 1);
+            }
+
+            p {
+                font-size: clamp(2rem, 2.55dvw, 2.8rem);
+                color: rgba(84, 55, 13, 1);
+            }
+
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
+        }
+    }
+
+    /* @media screen and (max-width: 768px) {
+        .hero_text {
+            display: none;
+        }
     } */
 
     #badge {
@@ -34,10 +53,11 @@
         width: 160px;
 
         position: absolute;
-        top: 50%;
-        left: 20%;
+        bottom: clamp(-1rem, 7dvw, 10rem);
+        right: -1rem;
     }
 }
+
 
 /* <---FAQ---> */
 .faq-section {
