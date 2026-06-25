@@ -6,7 +6,8 @@
 }
 
 html {
-    font-size: 62.5%; /* 1rem = 10px */
+    font-size: 62.5%;
+    /* 1rem = 10px */
 }
 
 body {
@@ -34,7 +35,7 @@ body {
 }
 
 .category {
-    font-size: clamp(2rem, 1.2vw , 4rem);
+    font-size: clamp(2rem, 1.2vw, 4rem);
     font-family: 'Palanquin', sans-serif;
     font-weight: 600;
     color: #4EA487;
@@ -59,8 +60,8 @@ body {
 
 .meta {
     display: flex;
-    align-items: center;    
-    flex-wrap: wrap;        
+    align-items: center;
+    flex-wrap: wrap;
     color: #666;
     font-size: clamp(1.2rem, 0.8vw + 1rem, 1.4rem);
     gap: 1rem 2rem;
@@ -72,17 +73,36 @@ body {
     gap: 0.6rem;
 }
 
-.meta img[src*="calendar"] { width: 1.6rem; height: 1.8rem; }
-.meta img[src*="eyeglasses"] { width: 2rem; height: 0.7rem; }
-.meta img[src*="eye_icon"] { width: 2rem; height: 1.4rem; }
-.meta img[src*="share"] { width: 1.6rem; height: 1.8rem; }
+.meta img[src*="calendar"] {
+    width: 1.6rem;
+    height: 1.8rem;
+}
+
+.meta img[src*="eyeglasses"] {
+    width: 2rem;
+    height: 0.7rem;
+}
+
+.meta img[src*="eye_icon"] {
+    width: 2rem;
+    height: 1.4rem;
+}
+
+.meta img[src*="share"] {
+    width: 1.6rem;
+    height: 1.8rem;
+}
 
 .author-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
     width: 25rem;
     background-color: #DDECE5;
-    border-radius: 1.2rem;
+    border-radius: 3rem;
     padding: 2rem;
-    text-align: center;
     flex-shrink: 0;
 }
 
@@ -92,6 +112,7 @@ body {
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1rem;
+    object-position: 75% center;
 }
 
 .author-box h3 {
@@ -129,7 +150,7 @@ body {
     font-family: 'Arima', cursive;
     font-weight: 600;
     color: #6A4A2B;
-    font-size: clamp(2rem, 2.5vw , 3.2rem);
+    font-size: clamp(2rem, 2.5vw, 3.2rem);
     margin-bottom: 3rem;
 }
 
@@ -145,7 +166,7 @@ body {
     box-shadow: -0.2rem 0.4rem 1.16rem rgba(0, 0, 0, 0.25);
 }
 
-.graph p{
+.graph p {
     font-size: clamp(1.6rem, 1vw + 1.2rem, 2.4rem);
     font-weight: 400;
     font-family: 'Palanquin', sans-serif;
@@ -174,11 +195,11 @@ body {
 .card img {
     width: 100%;
     max-width: 64rem;
-    height: auto; 
+    height: auto;
     display: block;
     margin: 0 auto 2rem;
 
-     /* Hier sind Werte für Abrundung & Schatten */
+    /* Hier sind Werte für Abrundung & Schatten */
     border-radius: 5.3rem;
     box-shadow: -0.2rem 0.4rem 1.16rem rgba(0, 0, 0, 0.25);
 }
@@ -206,27 +227,28 @@ body {
     .cards {
         flex-direction: column;
         gap: 5rem;
-    }      
+    }
 
     .meta-item {
-        flex-grow: 1;        
-        min-width: 13rem;    
+        flex-grow: 1;
+        min-width: 13rem;
         white-space: nowrap;
     }
 }
 
 @media (min-width: 1440px) {
+
     .article,
-    .header-content { 
-        max-width: 144rem; 
-        margin: 0 auto; 
-        
-        padding: 6rem 8rem; 
+    .header-content {
+        max-width: 144rem;
+        margin: 0 auto;
+
+        padding: 6rem 8rem;
     }
 
-    
-    .graph img, 
+
+    .graph img,
     .card img {
-        max-width: 80rem; 
+        max-width: 80rem;
     }
 }
