@@ -80,7 +80,7 @@
     height: 100%;
     box-shadow: -0.2rem 0.4rem 1.16rem rgba(0, 0, 0, 0.25);
     overflow: hidden;
-    border-top-right-radius: 5.3rem;
+    border-top-right-radius: 12rem;
     transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.5s ease;
     opacity: 0;
     z-index: 1;
@@ -123,6 +123,7 @@
 
 .slider-text-box {
     position: absolute;
+    
     top: 2rem;
     left: 2rem;
     right: 2rem;
@@ -132,13 +133,13 @@
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border-top-right-radius: 5.3rem;
+    border-top-right-radius: 12rem;
     transition: opacity 0.4s ease;
 }
 
 .slider-text-box h3 {
     font-family: 'Palanquin', sans-serif;
-    font-size: clamp(2.8rem, 2.5vw + 1.5rem, 4.8rem);
+    font-size: clamp(2.8rem, 2.5vw , 4.8rem);
     font-weight: 600;
     line-height: 1.2;
     margin-bottom: 0.8rem;
@@ -147,7 +148,7 @@
 
 .slider-text-box p {
     font-family: 'Palanquin', sans-serif;
-    font-size: clamp(2rem, 1.5vw + 1.5rem, 2.8rem);
+    font-size: clamp(2rem, 1.5vw, 2.8rem);
     font-weight: 400;
     line-height: 1.4;
     color: rgba(255, 255, 255, 0.9);
@@ -220,15 +221,11 @@
     }
 
     .slider-text-box {
+
         top: 4rem;
         left: 4rem;
         right: auto;
-        max-width: 70rem;
-        padding: 3.5rem;
-    }
-
-    .slider-text-box h3 {
-        margin-bottom: 1.5rem;
+        max-width: 95rem;
     }
 
     .slider-pagination {
