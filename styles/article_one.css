@@ -13,6 +13,7 @@ html {
     align-items: flex-start;
     gap: 2rem;
     margin-bottom: 5rem;
+    max-width: 144rem;
 }
 
 .article-text {
