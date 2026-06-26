@@ -44,8 +44,8 @@ html {
 }
 
 body {
-    /* background-color: #F8F5EB; */
-    /* color: #54370D; */
+    background-color: #F8F5EB;
+    color: #54370D;
     font-family: 'Palanquin';
 }
 
@@ -130,7 +130,7 @@ body {
 .content p {
     font-family: 'Palanquin';
     font-weight: 400;
-    font-size: 2.4rem;
+    font-size: clamp(1.6rem, 1.67dvw, 2.4rem);
     line-height: 120%;
 }
 
@@ -177,7 +177,7 @@ body {
 
 main {
     /* padding an mobile-nav und footer anpassen */
-    padding-bottom: 8.8rem;
+    padding-top: clamp(2.4rem, 5.56dvw, 8rem);
     padding-inline: clamp(15px, 9.39vw - 15.21px, 120px);
 
     font-size: 1.6rem;
@@ -223,7 +223,7 @@ main {
             .slider {
                 position: relative;
 
-                width: clamp(30rem, 90dvw, 70rem);
+                width: clamp(30rem, 95dvw, 70rem);
                 height: 44rem;
 
                 border-radius: 1.6rem;
@@ -309,6 +309,7 @@ main {
 
         .introduction p {
             margin-bottom: clamp(3.2rem, 6.1dvw, 8.8rem);
+            font-size: clamp(1.6rem, 1.67dvw, 2.4rem);
         }
 
         .list {
@@ -320,6 +321,7 @@ main {
             }
 
             li {
+                font-size: clamp(1.6rem, 1.67dvw, 2.4rem);
                 list-style-position: inside;
                 padding-inline-start: 2rem;
             }
