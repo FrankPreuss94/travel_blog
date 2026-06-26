@@ -38,7 +38,7 @@ body {
     margin-bottom: 1rem;
 }
 
-.article-text h1 {
+.article-text h2 {
     font-family: 'Arima', cursive;
     color: #F1C953;
     font-size: clamp(4rem, 4vw + 1rem, 6.4rem);
