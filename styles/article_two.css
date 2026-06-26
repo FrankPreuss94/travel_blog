@@ -14,15 +14,6 @@ body {
     font-family: 'Palanquin', sans-serif;
 }
 
-/* ==========================================================================
-   HERO AREA & AUTHOR BOX STYLES
-   ========================================================================== */
-/* .article{
-    padding-left: clamp(15rem, 8.33dvw, 120rem);
-    padding-right: clamp(15rem, 8.33dvw, 120rem);
-    padding-top: clamp(1rem, 5.55dvh, 8rem);
-    padding-bottom: clamp(1rem, 5.55dvh, 8rem);
-} */
 
 .article-hero {
     display: flex;
@@ -163,22 +154,29 @@ body {
     
 }
 
+
 .author-box h3 {
+    font-family: 'Palanquin', sans-serif;
+    font-weight: 700;
     color: #4EA487;
-    font-size: 1.8rem;
+    font-size: clamp(1.6rem, 1.5vw + 1rem, 1.8rem);
 }
 
 .role {
-    font-size: 1.4rem;
-    color: #666;
+    font-family: 'Arima', cursive;
+    font-weight: 400;
+    font-size: clamp(1.6rem, 1.5vw + 1rem, 1.8rem);
+    color: #54370D;
     margin-bottom: 1rem;
 }
 
 .bio {
-    font-size: 1.3rem;
+    font-family: 'Palanquin', sans-serif;
+    font-weight: 400;
+    color: #54370D;
+    font-size: clamp(1.6rem, 1.5vw + 1rem, 1.6rem);
     line-height: 1.5;
 }
-
 
 .content {
     margin-bottom: 5rem;

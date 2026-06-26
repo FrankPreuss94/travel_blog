@@ -101,7 +101,6 @@ body {
     align-items: center;
     justify-content: center;
     width: 27.2rem;
-    height: auto;
     background-color: #DDECE5;
     border-radius: 3rem;
     padding: 2rem;
@@ -198,7 +197,6 @@ body {
     align-self: stretch;
     text-align: left;
 }
-
 
 .cards {
     display: flex;
