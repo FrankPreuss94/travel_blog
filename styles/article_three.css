@@ -42,7 +42,7 @@ body {
     margin-bottom: 1rem;
 }
 
-.article-text h1 {
+.article-text h2 {
     font-family: 'Arima', cursive;
     color: #F1C953;
     font-size: clamp(4rem, 4vw + 1rem, 6.4rem);
@@ -175,13 +175,13 @@ body {
     width: 100%;
     max-width: 64rem;
     height: auto;
-    
+
     aspect-ratio: 640 / 471;
-    
+
     object-fit: contain;
-    height: auto; 
-    aspect-ratio: 640 / 471; 
-    object-fit: contain; 
+    height: auto;
+    aspect-ratio: 640 / 471;
+    object-fit: contain;
     display: block;
     background-color: #ffffff;
     margin: 0 auto;
@@ -195,7 +195,7 @@ body {
     font-family: 'Palanquin', sans-serif;
     line-height: 1.7;
     width: 100%;
-    align-self: stretch; 
+    align-self: stretch;
     text-align: left;
 }
 
@@ -210,7 +210,7 @@ body {
 .card {
     flex: 1;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     justify-content: space-between;
     gap: 2rem;
     width: 100%;
@@ -229,14 +229,14 @@ body {
     font-family: 'Palanquin', sans-serif;
     text-align: left;
     line-height: 1.6;
-    flex-grow: 1; 
+    flex-grow: 1;
 }
 
 .card img {
     width: 100%;
     max-width: 100%;
-    height: auto; 
-    aspect-ratio: 540 / 471; 
+    height: auto;
+    aspect-ratio: 540 / 471;
     object-fit: contain;
     display: block;
     background-color: #ffffff;
@@ -260,13 +260,13 @@ body {
         width: 100%;
     }
 
-    
+
     .cards {
         flex-direction: column;
         gap: 5rem;
     }
 
-    
+
     .graph img {
         max-width: 100%;
     }
