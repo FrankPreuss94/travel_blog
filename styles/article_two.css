@@ -21,8 +21,8 @@ body {
     align-items: flex-start;
     gap: 4rem;
     margin-bottom: 5rem;
-    padding-left: clamp(15rem, 8.33dvw, 120rem);
-    padding-right: clamp(15rem, 8.33dvw, 120rem);
+    padding-left: clamp(1.5rem, 8.33dvw, 12rem);
+    padding-right: clamp(1.5rem, 8.33dvw, 12rem);
     padding-top: clamp(1rem, 5.55dvh, 8rem);
 }
 
