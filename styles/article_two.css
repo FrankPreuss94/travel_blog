@@ -22,7 +22,7 @@ body {
     margin-bottom: 5rem;
     padding-left: clamp(1.5rem, 8.33dvw, 12rem);
     padding-right: clamp(1.5rem, 8.33dvw, 12rem);
-    padding-top: clamp(1.5rem, 5.56dvh, 8rem);
+    padding-top: clamp(1.5rem, 5.56dvw, 8rem);
 }
 
 .article-text {
@@ -52,13 +52,13 @@ body {
     margin-bottom: 3rem;
 }
 
-.video_wrapper{
+.video_wrapper {
     padding: clamp(0.5rem, 6dvw, 8.8rem);
     display: flex;
     justify-content: center;
 }
 
-.video_wrapper > iframe{
+.video_wrapper>iframe {
     border-radius: 30px;
     width: 100%;
     aspect-ratio: 16 / 9;
@@ -66,30 +66,30 @@ body {
     max-width: 1000px;
 }
 
-.text_and_list{
+.text_and_list {
     padding-top: 24px;
     padding-bottom: 24px;
     line-height: 1.5;
 }
 
-.text_and_list ul{
+.text_and_list ul {
     list-style-type: disc;
     padding-left: 2rem;
 }
 
-.list{
+.list {
     font-size: 2.4rem;
 }
 
-.text_and_list > p{
+.text_and_list>p {
     padding-bottom: 20px;
 }
 
 .text_and_list li::marker {
-  font-size: 0.7em;      
+    font-size: 0.7em;
 }
 
-.last_text{
+.last_text {
     padding-bottom: clamp(1rem, 5.55dvh, 8rem);
 }
 
@@ -148,7 +148,7 @@ body {
     object-fit: cover;
     margin-bottom: 1rem;
     object-position: 75% center;
-    
+
 }
 
 
@@ -193,7 +193,7 @@ body {
 /* Responsive Anpassungen für Mobilgeräte */
 @media (max-width: 768px) {
 
-    
+
 
     .article-hero {
         flex-direction: column;
@@ -232,8 +232,8 @@ body {
         font-size: 1.6rem;
     }
 
-    .list{
-    font-size: 1.6rem;
+    .list {
+        font-size: 1.6rem;
     }
 }
 
@@ -288,15 +288,28 @@ body {
 }
 
 
-@media screen and (max-width: 500px){
-    .article-hero{
-        
+@media screen and (max-width: 500px) {
+    .article-hero {
+
         padding-top: 10px;
     }
 }
 
-@media screen and (min-width: 1440px){
-    .article{
+@media screen and (min-width: 1440px) {
+    .article {
         padding: 0px max(0px, calc(50% - 720px));
+    }
+}
+
+@media screen and (min-width: 1441px) {
+    .article-hero {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .content {
+        margin-bottom: 5rem;
+        padding-left: 0;
+        padding-right: 0;
     }
 }
