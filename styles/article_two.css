@@ -19,7 +19,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 4rem;
+    gap: 2rem;
     margin-bottom: 5rem;
     padding-left: clamp(1.5rem, 8.33dvw, 12rem);
     padding-right: clamp(1.5rem, 8.33dvw, 12rem);
@@ -50,7 +50,6 @@ body {
     font-size: clamp(1.8rem, 1.5vw + 1rem, 2.8rem);
     font-weight: 400;
     line-height: 1.5;
-    max-width: 70rem;
     margin-bottom: 3rem;
 }
 
