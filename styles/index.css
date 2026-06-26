@@ -93,6 +93,7 @@
     color: #4EA487;
     font-size: clamp(4rem, 2.5vw + 1.5rem, 5.2rem);
     margin-bottom: 2rem;
+    margin-top: 10rem;
 }
 
 
@@ -388,6 +389,7 @@
 
     .faq-section h2 {
         font-size: 5.2rem;
+        margin-top: 10rem;
     }
 
     .faq-container {
